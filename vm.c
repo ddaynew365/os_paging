@@ -185,7 +185,7 @@ static bool __alloc_page(unsigned int vpn, unsigned int rw)
 {
 	unsigned int pfn;
 
-	assert(rw);
+	//assert(rw);
 
 	if (__translate(RW_READ, vpn, &pfn)) {
 		fprintf(stderr, "%u is already allocated to %u\n", vpn, pfn);
